@@ -13,12 +13,12 @@ const config: Config = {
         primary: {
           "500": "var(--zenml-primary-500)",
           "700": "var(--zenml-primary-700)",
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         lightGradient: "var(--zenml-light-gradient)",
         background: "var(--background)",
-        foreground: "hsl(var(--foreground))",
+        foreground: "var(--foreground)",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
