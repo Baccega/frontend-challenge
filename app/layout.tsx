@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] items-center justify-items-center font-[family-name:var(--font-geist-sans)] antialiased`}
       >
-        <header className="flex h-full w-full items-center justify-center border-b border-gray-300 px-4">
+        <header className="flex h-full w-full items-center justify-center border-b border-gray-300 bg-white px-4">
           <div className="w-full max-w-[var(--max-w)]">
             <Image
               priority

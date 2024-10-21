@@ -17,7 +17,7 @@ const config: Config = {
           foreground: "hsl(var(--primary-foreground))",
         },
         lightGradient: "var(--zenml-light-gradient)",
-        background: "hsl(var(--background))",
+        background: "var(--background)",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
