@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
+import Providers from "./providers";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,18 +31,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] items-center justify-items-center font-[family-name:var(--font-geist-sans)] antialiased`}
       >
-        <header className="flex h-full w-full items-center justify-center border-b border-gray-300 bg-white px-4">
-          <div className="w-full max-w-[var(--max-w)]">
-            <Image
-              priority
-              src="/logo.png"
-              alt="ZenML logo"
-              width={135}
-              height={46}
-            />
-          </div>
-        </header>
-        {children}
+        <Providers>
+          <header className="flex h-full w-full items-center justify-center border-b border-gray-300 bg-white px-4">
+            <div className="w-full max-w-[var(--max-w)]">
+              <Image
+                priority
+                src="/logo.png"
+                alt="ZenML logo"
+                width={135}
+                height={46}
+              />
+            </div>
+          </header>
+          {children}
+        </Providers>
       </body>
     </html>
   );
