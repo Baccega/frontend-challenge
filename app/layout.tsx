@@ -32,7 +32,13 @@ export default function RootLayout({
       >
         <header className="flex h-full w-full items-center justify-center border-b border-gray-300 px-4">
           <div className="w-full max-w-[var(--max-w)]">
-            <Image src="/logo.png" alt="ZenML logo" width={135} height={46} />
+            <Image
+              priority
+              src="/logo.png"
+              alt="ZenML logo"
+              width={135}
+              height={46}
+            />
           </div>
         </header>
         {children}
