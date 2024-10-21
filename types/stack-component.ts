@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { OrchestratorStackComponentSchema } from "./stack-components-types/orchestrator";
-import { ArtifactStoreStackComponentSchema } from "./stack-components-types/artifact-store";
-import { ExperimentTrackerStackComponentSchema } from "./stack-components-types/experimental-tracker";
-import { SecretsManagerStackComponentSchema } from "./stack-components-types/secrets-manager";
-import { ContainerRegistryStackComponentSchema } from "./stack-components-types/container-registry";
-import { DataValidatorStackComponentSchema } from "./stack-components-types/data-validator";
-import { ModelDeployerStackComponentSchema } from "./stack-components-types/model-deployer";
+import { OrchestratorStackComponentSchema } from "./stack-components/orchestrator";
+import { ArtifactStoreStackComponentSchema } from "./stack-components/artifact-store";
+import { ExperimentTrackerStackComponentSchema } from "./stack-components/experimental-tracker";
+import { SecretsManagerStackComponentSchema } from "./stack-components/secrets-manager";
+import { ContainerRegistryStackComponentSchema } from "./stack-components/container-registry";
+import { DataValidatorStackComponentSchema } from "./stack-components/data-validator";
+import { ModelDeployerStackComponentSchema } from "./stack-components/model-deployer";
 
 // Base type for common properties
 export const StackComponentCommonSchema = z.object({
