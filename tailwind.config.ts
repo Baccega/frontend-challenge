@@ -2,15 +2,18 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
+        primary: {
+          500: "var(--zenml-primary-500)",
+          700: "var(--zenml-primary-700)",
+        },
+        lightGradient: "var(--zenml-light-gradient)",
         background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },

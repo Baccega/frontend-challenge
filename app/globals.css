@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --zenml-primary-500: #7a3ef4;
+  --zenml-primary-700: #281158;
+  --zenml-light-gradient: #f6f2ff;
+
+  --background: #efefef;
+  --max-w: 1280px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
