@@ -13,7 +13,7 @@ export default function Home() {
     <HydrationBoundary state={dehydrate(queryClient)}>
       <main className="flex h-full w-full justify-center bg-background pt-8">
         <div className="flex w-full max-w-[var(--max-w)] flex-col gap-10">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="row-start-2">Loading...</div>}>
             <Stacks />
           </Suspense>
         </div>

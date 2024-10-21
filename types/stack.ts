@@ -20,4 +20,6 @@ export const StackSchema = z.object({
   }),
 });
 
+export const StackArraySchema = z.array(StackSchema);
+
 export type Stack = z.infer<typeof StackSchema>;
