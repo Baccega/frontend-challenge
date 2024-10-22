@@ -48,7 +48,7 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             {description}
           </p>
-          <div className="@xl/card:basis-3/5 flex flex-wrap gap-4">
+          <div className="@xl/card:basis-3/5 @xl/card:justify-end flex flex-wrap gap-4">
             {Object.entries(components).map(([stackComponentType, ids]) => {
               const StackComponentIcon = getStackComponentIcon(
                 stackComponentType as StackComponent["type"],
@@ -60,7 +60,11 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
                 const stackComponentName = getStackComponentName(id);
                 return (
                   <Tooltip key={id}>
-                    <TooltipTrigger className="flex h-fit items-center gap-1 rounded-md border border-gray-300 px-2 py-1">
+                    <TooltipTrigger
+                      tabIndex={-1}
+                      aria-hidden
+                      className="flex h-fit items-center gap-1 rounded-md border border-gray-300 px-2 py-1"
+                    >
                       <StackComponentIcon size={20} />
                       {stackComponentName}
                     </TooltipTrigger>

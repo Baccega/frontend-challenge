@@ -29,11 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] items-center justify-items-center font-[family-name:var(--font-geist-sans)] antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] items-center justify-items-center pb-10 font-[family-name:var(--font-geist-sans)] antialiased`}
       >
         <Providers>
-          <header className="flex h-full w-full items-center justify-center border-b border-gray-300 bg-white px-4">
-            <div className="w-full max-w-[var(--max-w)]">
+          <header className="sticky top-0 z-40 flex h-full w-full items-center justify-center border-b border-gray-300 bg-white">
+            <div className="w-full max-w-[var(--max-w)] px-4">
               <Image
                 priority
                 src="/logo.png"

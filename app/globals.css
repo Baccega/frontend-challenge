@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 :root {
+  --header-height: 70px;
+  --stack-min-width: 500px;
+
+  /* Colors */
   --zenml-primary-500: #7a3ef4;
   --zenml-primary-700: #281158;
   --zenml-light-gradient: #f6f2ff;
   --max-w: 1280px;
 
-  /* Default Shadcn/ui values */
+  /* Default Shadcn/ui colors */
   --background: #efefef;
   --foreground: #374151;
   --card: 0 0% 100%;
