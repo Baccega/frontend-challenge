@@ -21,18 +21,18 @@ const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
     return (
       <Link
         href={`/${stack.id}`}
-        className="group/card h-full max-w-[calc(100vw-2rem)] cursor-pointer"
+        className="group/card h-full max-w-[calc(100vw-2rem)] cursor-pointer focus:outline-none"
       >
         <Card
           className={cn(
             className,
-            "@container/card group-hover/card:border-primary h-full transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[.98] active:shadow-inner group-hover/card:bg-lightGradient",
+            "@container/card group-focus/card:border-primary group-hover/card:border-primary h-full transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[.98] active:shadow-inner group-hover/card:bg-lightGradient group-focus/card:bg-lightGradient",
           )}
           ref={ref}
           {...props}
         >
           <CardHeader className="gap-2">
-            <h2 className="inline-block h-fit break-all text-lg font-medium">
+            <h2 className="inline-block h-fit break-all text-lg font-medium group-hover/card:text-primary-500 group-focus/card:text-primary-500">
               {name}
             </h2>{" "}
             <VisibilityIcon is_shared={is_shared ?? false} />
