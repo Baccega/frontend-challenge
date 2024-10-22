@@ -1,14 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { RotateCcw } from "lucide-react";
 import { useEffect } from "react";
 
 export default function Error({
   error,
-  reset,
 }: {
   error: Error & { digest?: string };
-  reset: () => void;
 }) {
   useEffect(() => {
     console.error(error);
@@ -19,8 +18,8 @@ export default function Error({
       <h2 className="text-2xl">
         Something went wrong while rendering the stack detail page!
       </h2>
-      <Button className="w-fit" onClick={() => reset()}>
-        Try again
+      <Button className="w-fit" onClick={() => window.location.reload()}>
+        <RotateCcw /> Try again
       </Button>
     </div>
   );
