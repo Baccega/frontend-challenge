@@ -2,6 +2,7 @@ import { baseUrl } from "@/lib/utils";
 import { StackArraySchema } from "@/types/stack";
 import { queryOptions } from "@tanstack/react-query";
 
+// This query should probably also filter by project, but it's not needed for this demo
 export const stacksOptions = queryOptions({
   queryKey: ["stacks"],
   queryFn: async () => {
