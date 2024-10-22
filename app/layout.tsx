@@ -43,7 +43,9 @@ export default function RootLayout({
               />
             </div>
           </header>
-          {children}
+          <main className="flex h-full w-full justify-center bg-background pt-8">
+            <div className="w-full max-w-[var(--max-w)]">{children}</div>
+          </main>
         </Providers>
       </body>
     </html>

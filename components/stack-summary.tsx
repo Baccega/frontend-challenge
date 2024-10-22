@@ -3,14 +3,14 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { getIsSharedIcon, getStackComponentIcon } from "@/lib/dynamic-icons";
-import type { Stack } from "@/types/stack";
+import type { Stack as StackSummary } from "@/types/stack";
 import { StackComponent } from "@/types/stack-component";
 import { getStackComponentName } from "@/lib/mock";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import Link from "next/link";
 
 // A bit over-engineered for this use tiny case, but I wanted to show how I would use this library in a real-world scenario
-const stackIsSharedVariants = cva("mt-0", {
+const isSharedVariants = cva("mt-0", {
   variants: {
     variant: {
       private: "",
@@ -22,11 +22,12 @@ const stackIsSharedVariants = cva("mt-0", {
   },
 });
 
-export interface StackProps extends React.HTMLAttributes<HTMLDivElement> {
-  stack: Stack;
+export interface StackSummaryProps
+  extends React.HTMLAttributes<HTMLDivElement> {
+  stack: StackSummary;
 }
 
-const Stack = React.forwardRef<HTMLDivElement, StackProps>(
+const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
   ({ className, stack, ...props }, ref) => {
     const { name, description, is_shared, components } = stack;
 
@@ -46,7 +47,7 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
             <h2 className="inline-block h-fit text-lg font-medium">{name}</h2>{" "}
             <IsSharedIcon
               size={20}
-              className={stackIsSharedVariants({
+              className={isSharedVariants({
                 variant: is_shared ? "public" : "private",
               })}
             />
@@ -93,6 +94,6 @@ const Stack = React.forwardRef<HTMLDivElement, StackProps>(
     );
   },
 );
-Stack.displayName = "Stack";
+StackSummary.displayName = "StackSummary";
 
-export { Stack };
+export { StackSummary };
