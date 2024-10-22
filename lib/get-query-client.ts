@@ -10,6 +10,8 @@ function makeQueryClient() {
       queries: {
         staleTime: 60 * 1000,
         throwOnError: true,
+        // Prenvent retries (just to see the error state)
+        retry: false,
       },
       dehydrate: {
         // include pending queries in dehydration
