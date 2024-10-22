@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const SecretsManagerStackComponentBaseSchema =
   StackComponentCommonSchema.extend({
-    type: z.literal("secrets_manager"),
+    type: z.literal(availableStackComponentsTypes.secrets_manager),
   });
 
 const SecretsManagerGpcFlavorSchema =

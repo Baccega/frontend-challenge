@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const ContainerRegistryStackComponentBaseSchema =
   StackComponentCommonSchema.extend({
-    type: z.literal("container_registry"),
+    type: z.literal(availableStackComponentsTypes.container_registry),
   });
 
 // In this case these two flavors are basically identical and could be merged,

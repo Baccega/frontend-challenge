@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const ExperimentTrackerStackComponentBaseSchema =
   StackComponentCommonSchema.extend({
-    type: z.literal("experiment_tracker"),
+    type: z.literal(availableStackComponentsTypes.experiment_tracker),
   });
 
 const ExperimentTrackerMlflowFlavorSchema =

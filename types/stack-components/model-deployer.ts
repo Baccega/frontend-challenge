@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const ModelDeployerStackComponentBaseSchema = StackComponentCommonSchema.extend(
   {
-    type: z.literal("model_deployer"),
+    type: z.literal(availableStackComponentsTypes.model_deployer),
   },
 );
 

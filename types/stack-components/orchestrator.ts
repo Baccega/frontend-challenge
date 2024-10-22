@@ -1,8 +1,11 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const OrchestratorStackComponentBaseSchema = StackComponentCommonSchema.extend({
-  type: z.literal("orchestrator"),
+  type: z.literal(availableStackComponentsTypes.orchestrator),
 });
 
 const OrchestratorKubeflowFlavorSchema =

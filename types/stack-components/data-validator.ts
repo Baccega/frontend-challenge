@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const DataValidatorStackComponentBaseSchema = StackComponentCommonSchema.extend(
   {
-    type: z.literal("data_validator"),
+    type: z.literal(availableStackComponentsTypes.data_validator),
   },
 );
 

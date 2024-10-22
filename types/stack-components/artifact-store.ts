@@ -1,9 +1,12 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../common";
+import {
+  availableStackComponentsTypes,
+  StackComponentCommonSchema,
+} from "../common";
 
 const ArtifactStoreStackComponentBaseSchema = StackComponentCommonSchema.extend(
   {
-    type: z.literal("artifact_store"),
+    type: z.literal(availableStackComponentsTypes.artifact_store),
   },
 );
 
