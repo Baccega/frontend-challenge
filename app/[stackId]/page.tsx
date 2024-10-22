@@ -19,7 +19,7 @@ export default async function StackDetailsPage({
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <div className="px-4">
+      <div className="md:px-4">
         <Suspense fallback={<div className="">Loading...</div>}>
           <StackDetails id={stackId} />
         </Suspense>

@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <div className="desktop:px-0 grid w-full grid-cols-[repeat(auto-fill,minmax(var(--stack-min-width),1fr))] gap-10 px-4">
+      <div className="desktop:px-0 grid w-full max-w-[calc(100vw-2rem)] grid-cols-[repeat(auto-fill,minmax(var(--stack-min-width),1fr))] gap-10">
         <Suspense fallback={<div className="row-start-2">Loading...</div>}>
           <StackList />
         </Suspense>

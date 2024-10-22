@@ -15,7 +15,9 @@ export function StackDetails({ id }: { id: string }) {
     <>
       <Card className="w-full">
         <CardHeader className="gap-2">
-          <h2 className="inline-block h-fit text-xl font-bold">{name}</h2>{" "}
+          <h2 className="inline-block h-fit break-all text-xl font-bold">
+            {name}
+          </h2>{" "}
           <VisibilityIcon is_shared={is_shared ?? false} />
         </CardHeader>
         <CardDescription className="flex flex-col">

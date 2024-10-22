@@ -5,7 +5,7 @@
 :root {
   --header-height: 70px;
   --stack-min-width: 500px;
-  --stack-component-min-width: 300px;
+  --stack-component-min-width: 250px;
 
   /* Colors */
   --zenml-primary-500: #7a3ef4;

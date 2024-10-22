@@ -30,11 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] items-center justify-items-center pb-10 font-[family-name:var(--font-geist-sans)] antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] overflow-y-hidden pb-10 font-[family-name:var(--font-geist-sans)] antialiased`}
       >
         <Providers>
           <header className="sticky top-0 z-40 flex h-full w-full items-center justify-center border-b border-gray-300 bg-white">
-            <div className="w-full max-w-[var(--max-w)] px-4">
+            <div className="w-full max-w-[min(calc(100vw-2rem),var(--max-w))] md:px-4">
               <Link href="/">
                 <Image
                   priority
@@ -47,8 +47,10 @@ export default function RootLayout({
               </Link>
             </div>
           </header>
-          <main className="flex h-full w-full justify-center bg-background pt-8">
-            <div className="w-full max-w-[var(--max-w)]">{children}</div>
+          <main className="flex h-full w-screen justify-center bg-background pt-8">
+            <div className="w-full max-w-[min(calc(100vw-2rem),var(--max-w))]">
+              {children}
+            </div>
           </main>
         </Providers>
       </body>

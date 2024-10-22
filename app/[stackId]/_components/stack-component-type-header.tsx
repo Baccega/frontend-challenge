@@ -27,7 +27,7 @@ export function StackComponentTypeHeader({
     : [];
 
   return (
-    <h2 className="flex items-center gap-1 text-xl">
+    <h2 className="flex flex-wrap items-center gap-1 text-xl">
       <span className="flex items-center gap-3 text-xl">
         <Icon size={24} />
         {getPrettyStackComponentType(type)}

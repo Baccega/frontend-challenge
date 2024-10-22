@@ -19,21 +19,26 @@ const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
     const { name, description, is_shared, components } = stack;
 
     return (
-      <Link href={`/${stack.id}`} className="group/card cursor-pointer">
+      <Link
+        href={`/${stack.id}`}
+        className="group/card h-full max-w-[calc(100vw-2rem)] cursor-pointer"
+      >
         <Card
           className={cn(
             className,
-            "@container/card text- group-hover/card:border-primary transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[.98] active:shadow-inner group-hover/card:bg-lightGradient",
+            "@container/card group-hover/card:border-primary h-full transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[.98] active:shadow-inner group-hover/card:bg-lightGradient",
           )}
           ref={ref}
           {...props}
         >
           <CardHeader className="gap-2">
-            <h2 className="inline-block h-fit text-lg font-medium">{name}</h2>{" "}
+            <h2 className="inline-block h-fit break-all text-lg font-medium">
+              {name}
+            </h2>{" "}
             <VisibilityIcon is_shared={is_shared ?? false} />
           </CardHeader>
           <CardContent className="@xl/card:flex-row relative flex flex-col gap-4">
-            <p className="@xl/card:basis-2/5">
+            <p className="@xl/card:basis-2/5 break-all">
               {/* Adding Lorem ipsum because description is empty */}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               {description}

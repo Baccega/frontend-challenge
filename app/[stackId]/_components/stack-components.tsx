@@ -43,7 +43,7 @@ export function StackComponents({
                 availableComponents={data}
               />
             </AccordionTrigger>
-            <AccordionContent className="p-2">
+            <AccordionContent className="md:p-2">
               <div className="grid grid-cols-[repeat(auto-fill,minmax(var(--stack-component-min-width),1fr))] gap-4">
                 {data
                   .filter((cur) => cur.type === type)
