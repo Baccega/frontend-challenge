@@ -8,7 +8,7 @@ import { Check } from "lucide-react";
 
 // A bit over-engineered for this use tiny case, but I wanted to show how I would use this library in a real-world scenario
 const stackComponentSummaryVariants = cva(
-  "hover:scale-[1.02] active:scale-[.98] hover:cursor-pointer",
+  "pb-9 hover:scale-[1.02] active:scale-[.98] hover:cursor-pointer",
   {
     variants: {
       variant: {
@@ -36,7 +36,7 @@ const StackComponentSummary = React.forwardRef<
   return (
     <Card className={cn(stackComponentSummaryVariants({ variant }), className)}>
       <CardHeader className="">{stackComponent.name}</CardHeader>
-      <CardDescription className="relative pb-4">
+      <CardDescription className="relative text-left">
         {stackComponent.flavor}
         {variant === "selected" && (
           <Check className="bg-primary absolute right-0 rounded-full p-1 text-white" />
