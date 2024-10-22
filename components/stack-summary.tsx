@@ -1,26 +1,13 @@
 import * as React from "react";
-import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader } from "./ui/card";
-import { getIsSharedIcon, getStackComponentIcon } from "@/lib/dynamic-icons";
+import { getStackComponentIcon } from "@/lib/dynamic-icons";
 import type { Stack as StackSummary } from "@/types/stack";
 import { StackComponent } from "@/types/stack-component";
 import { getStackComponentName } from "@/lib/mock";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import Link from "next/link";
-
-// A bit over-engineered for this use tiny case, but I wanted to show how I would use this library in a real-world scenario
-const isSharedVariants = cva("mt-0", {
-  variants: {
-    variant: {
-      private: "",
-      public: "text-emerald-600",
-    },
-  },
-  defaultVariants: {
-    variant: "private",
-  },
-});
+import { VisibilityIcon } from "./visibility-icon";
 
 export interface StackSummaryProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -30,8 +17,6 @@ export interface StackSummaryProps
 const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
   ({ className, stack, ...props }, ref) => {
     const { name, description, is_shared, components } = stack;
-
-    const IsSharedIcon = getIsSharedIcon(is_shared ?? false);
 
     return (
       <Link href={`/${stack.id}`} className="group/card cursor-pointer">
@@ -45,12 +30,7 @@ const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
         >
           <CardHeader className="gap-2">
             <h2 className="inline-block h-fit text-lg font-medium">{name}</h2>{" "}
-            <IsSharedIcon
-              size={20}
-              className={isSharedVariants({
-                variant: is_shared ? "public" : "private",
-              })}
-            />
+            <VisibilityIcon is_shared={is_shared ?? false} />
           </CardHeader>
           <CardContent className="@xl/card:flex-row relative flex flex-col gap-4">
             <p className="@xl/card:basis-2/5">
