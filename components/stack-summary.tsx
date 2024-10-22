@@ -23,7 +23,7 @@ const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
         <Card
           className={cn(
             className,
-            "@container/card text- group-hover/card:border-primary transition-colors group-hover/card:bg-lightGradient",
+            "@container/card text- group-hover/card:border-primary transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[.98] active:shadow-inner group-hover/card:bg-lightGradient",
           )}
           ref={ref}
           {...props}

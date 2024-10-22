@@ -8,7 +8,7 @@ import { Check } from "lucide-react";
 
 // A bit over-engineered for this use tiny case, but I wanted to show how I would use this library in a real-world scenario
 const stackComponentSummaryVariants = cva(
-  "pb-9 hover:scale-[1.02] active:scale-[.98] hover:cursor-pointer",
+  "pb-9 hover:shadow-lg hover:scale-[1.02] active:shadow-inner active:scale-[.98] hover:cursor-pointer hover:bg-lightGradient hover:border-primary transition-all",
   {
     variants: {
       variant: {
