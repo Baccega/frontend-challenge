@@ -7,11 +7,5 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 export function Stacks() {
   const { data } = useSuspenseQuery(stacksOptions);
 
-  return (
-    <>
-      {data?.map(({ id, name, description }) => (
-        <Stack key={id} name={name} description={description} />
-      ))}{" "}
-    </>
-  );
+  return <>{data?.map((stack) => <Stack key={stack.id} stack={stack} />)} </>;
 }

@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate";
+import tailwindContainerQueries from "@tailwindcss/container-queries";
 
 const config: Config = {
   content: [
@@ -61,6 +62,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindAnimate],
+  plugins: [tailwindAnimate, tailwindContainerQueries],
 };
 export default config;
