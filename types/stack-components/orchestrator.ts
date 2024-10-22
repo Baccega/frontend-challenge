@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { StackComponentCommonSchema } from "../stack-component";
+import { StackComponentCommonSchema } from "../common";
 
 const OrchestratorStackComponentBaseSchema = StackComponentCommonSchema.extend({
   type: z.literal("orchestrator"),
