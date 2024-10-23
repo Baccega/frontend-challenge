@@ -53,7 +53,7 @@ export function StackComponents({
                     ]?.find((cur) => cur === stackComponent.id);
                     return (
                       <Dialog key={stackComponent.id}>
-                        <DialogTrigger>
+                        <DialogTrigger className="group/component focus:outline-none">
                           <StackComponentSummary
                             stackComponent={stackComponent}
                             variant={selected ? "selected" : "default"}

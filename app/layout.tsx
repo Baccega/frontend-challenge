@@ -35,11 +35,14 @@ export default function RootLayout({
         <Providers>
           <header className="sticky top-0 z-40 flex h-full w-full items-center justify-center border-b border-gray-300 bg-white">
             <div className="w-full max-w-[min(calc(100vw-2rem),var(--max-w))] md:px-4">
-              <Link href="/">
+              <Link
+                href="/"
+                className="outline-offset-1 focus:outline-primary-500"
+              >
                 <Image
                   priority
                   src="/logo.png"
-                  alt="ZenML logo"
+                  alt="ZenML logo, homepage"
                   width={135}
                   className="transition-transform hover:scale-105 active:scale-95"
                   height={46}

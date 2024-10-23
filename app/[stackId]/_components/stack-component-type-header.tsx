@@ -1,6 +1,5 @@
 "use client";
 
-import { stackComponentsOptions } from "@/api/stack-components";
 import { getStackComponentIcon } from "@/lib/dynamic-icons";
 import { getPrettyStackComponentType } from "@/lib/utils";
 import { Stack } from "@/types/stack";
