@@ -7,6 +7,8 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { StackComponents } from "./stack-components";
 
 export function StackDetails({ id }: { id: string }) {
+  // No need to check the status, it's always going to be "success",
+  // see https://tanstack.com/query/latest/docs/framework/react/reference/useSuspenseQuery
   const { data } = useSuspenseQuery(stackOptions(id));
 
   const { name, is_shared, description, created, updated, components } = data;

@@ -28,6 +28,8 @@ export function StackComponents({
 }: {
   selectedComponents: Stack["components"];
 }) {
+  // No need to check the status, it's always going to be "success",
+  // see https://tanstack.com/query/latest/docs/framework/react/reference/useSuspenseQuery
   const { data } = useSuspenseQuery(stackComponentsOptions);
 
   return (
