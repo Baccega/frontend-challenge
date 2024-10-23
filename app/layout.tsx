@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Image from "next/image";
 import Providers from "./providers";
-import Link from "next/link";
+import { Navigation } from "./_components/navigation";
 
 const geistSans = localFont({
   src: "../public/fonts/GeistVF.woff",
@@ -33,23 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} grid min-h-screen w-full grid-rows-[70px_1fr] overflow-x-hidden pb-10 font-[family-name:var(--font-geist-sans)] antialiased`}
       >
         <Providers>
-          <header className="sticky top-0 z-40 flex h-full w-full items-center justify-center border-b border-gray-300 bg-white">
-            <div className="w-full max-w-[min(calc(100vw-2rem),var(--max-w))] md:px-4">
-              <Link
-                href="/"
-                className="outline-offset-1 focus:outline-primary-500"
-              >
-                <Image
-                  priority
-                  src="/logo.png"
-                  alt="ZenML logo, homepage"
-                  width={135}
-                  className="transition-transform hover:scale-105 active:scale-95"
-                  height={46}
-                />
-              </Link>
-            </div>
-          </header>
+          <Navigation />
           <main className="flex h-full w-screen justify-center bg-background pt-8">
             <div className="w-full max-w-[min(calc(100vw-2rem),var(--max-w))]">
               {children}
