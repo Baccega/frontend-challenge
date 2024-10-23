@@ -57,7 +57,6 @@ const StackSummary = React.forwardRef<HTMLDivElement, StackSummaryProps>(
                     <Tooltip key={id}>
                       <TooltipTrigger
                         tabIndex={-1}
-                        aria-hidden
                         className="flex h-fit items-center gap-1 rounded-md border border-gray-300 px-2 py-1"
                       >
                         <StackComponentIcon size={20} />

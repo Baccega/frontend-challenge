@@ -1,7 +1,6 @@
 import * as React from "react";
 import { cva, VariantProps } from "class-variance-authority";
-import { getIsSharedIcon } from "@/lib/dynamic-icons";
-import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
+import { Card, CardDescription, CardHeader } from "./ui/card";
 import { StackComponent } from "@/types/stack-component";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
@@ -33,7 +32,11 @@ const StackComponentSummary = React.forwardRef<
   StackComponentSummaryProps
 >(({ className, stackComponent, variant, ...props }, ref) => {
   return (
-    <Card className={cn(stackComponentSummaryVariants({ variant }), className)}>
+    <Card
+      ref={ref}
+      {...props}
+      className={cn(stackComponentSummaryVariants({ variant }), className)}
+    >
       <CardHeader className="">{stackComponent.name}</CardHeader>
       <CardDescription className="relative text-left">
         {stackComponent.flavor}

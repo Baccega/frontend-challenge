@@ -9,7 +9,7 @@ import { StackDetailsSkeleton } from "./_components/stack-component-skeleton";
 export default async function StackDetailsPage({
   params,
 }: {
-  params: { stackId: string };
+  params: Promise<{ stackId: string }>;
 }) {
   // Params need to be awaited on Next 15, see https://nextjs.org/docs/messages/sync-dynamic-apis#possible-ways-to-fix-it
   const { stackId } = await params;
