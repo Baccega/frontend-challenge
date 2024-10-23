@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { stackOptions } from "@/api/stacks";
 import { StackDetails } from "./_components/stack-details";
 import { stackComponentsOptions } from "@/api/stack-components";
+import { StackDetailsSkeleton } from "./_components/stack-component-skeleton";
 
 export default async function StackDetailsPage({
   params,
@@ -20,7 +21,7 @@ export default async function StackDetailsPage({
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <div className="md:px-4">
-        <Suspense fallback={<div className="">Loading...</div>}>
+        <Suspense fallback={<StackDetailsSkeleton />}>
           <StackDetails id={stackId} />
         </Suspense>
       </div>
