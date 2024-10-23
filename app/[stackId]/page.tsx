@@ -1,4 +1,4 @@
-import { getQueryClient } from "@/lib/get-query-client";
+import { getQueryClient } from "@/lib/query-client";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { Suspense } from "react";
 import { stackOptions } from "@/api/stacks";
