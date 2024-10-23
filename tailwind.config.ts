@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate";
 import tailwindContainerQueries from "@tailwindcss/container-queries";
 
+/* Normally I would clean this up, but there is no need for this project */
 const config: Config = {
   content: [
     "./components/**/*.{js,ts,jsx,tsx,mdx}",

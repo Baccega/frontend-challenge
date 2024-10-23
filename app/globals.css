@@ -14,7 +14,7 @@
   --max-w: 1280px;
 
   /* Shadcn/ui colors */
-  /* Normally I would clean this up, but there is no need to remove them here */
+  /* Normally I would clean this up, but there is no need for this project */
   --background: #efefef;
   --foreground: #374151;
   --card: 0 0% 100%;
@@ -53,7 +53,7 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground bg-background;
+    @apply bg-background text-foreground;
     font-family: Arial, Helvetica, sans-serif;
   }
 }
