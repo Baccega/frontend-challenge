@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    ppr: true,
+    // Turn this flag on for Partial Prerendering
+    ppr: false,
   },
 };
 
