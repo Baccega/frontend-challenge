@@ -23,7 +23,11 @@ export function StackDetails({ id }: { id: string }) {
           <VisibilityIcon is_shared={is_shared ?? false} />
         </CardHeader>
         <CardDescription className="flex flex-col">
-          <span>{description}</span>
+          <span>
+            {/* Adding Lorem ipsum because description is empty */}
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            {description}
+          </span>
           <span className="pt-2">
             Created: {new Date(created).toLocaleString()}
           </span>

@@ -1,5 +1,6 @@
 // This file should not exist, it's here only because this is a demo and not a real app
 
+// Get name given the id of the stack component
 export function getStackComponentName(id: string): string {
   switch (id) {
     case "0c32dddd-0779-4f12-ab61-a9e88b70d434":

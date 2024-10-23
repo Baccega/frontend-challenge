@@ -14,6 +14,7 @@
   --max-w: 1280px;
 
   /* Shadcn/ui colors */
+  /* Normally I would clean this up, but there is no need to remove them here */
   --background: #efefef;
   --foreground: #374151;
   --card: 0 0% 100%;
