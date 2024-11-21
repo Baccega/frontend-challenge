@@ -1,0 +1,345 @@
+[
+    {
+        "id": "0c32dddd-0779-4f12-ab61-a9e88b70d434",
+        "created": "2022-11-22T12:34:40",
+        "updated": "2022-11-22T12:34:40",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "default",
+        "type": "artifact_store",
+        "flavor": "local",
+        "configuration": {}
+    },
+    {
+        "id": "1f6a4f4b-9da3-4085-bd25-45a7255be88a",
+        "created": "2022-11-23T15:14:43",
+        "updated": "2022-11-23T15:14:43",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "multi_tenant_kubeflow",
+        "type": "orchestrator",
+        "flavor": "kubeflow",
+        "configuration": {
+            "synchronous": false,
+            "timeout": 1200,
+            "client_args": {},
+            "user_namespace": null,
+            "node_selectors": {},
+            "node_affinity": {},
+            "pod_settings": null,
+            "kubeflow_pipelines_ui_port": 8080,
+            "kubeflow_hostname": "https://www.kubeflowshowcase.zenml.io/pipeline",
+            "kubeflow_namespace": "kubeflow",
+            "kubernetes_context": "zenml-eks",
+            "skip_local_validations": false,
+            "skip_cluster_provisioning": false,
+            "skip_ui_daemon_provisioning": false
+        }
+    },
+    {
+        "id": "4bfd3527-8cf3-4618-869a-fdc0fcaaac7e",
+        "created": "2022-11-24T17:16:59",
+        "updated": "2022-11-24T17:16:59",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "local_mlflow_tracker",
+        "type": "experiment_tracker",
+        "flavor": "mlflow",
+        "configuration": {
+            "experiment_name": null,
+            "nested": false,
+            "tags": {},
+            "tracking_uri": null,
+            "tracking_username": null,
+            "tracking_password": null,
+            "tracking_token": null,
+            "tracking_insecure_tls": false,
+            "databricks_host": null
+        }
+    },
+    {
+        "id": "588be12b-67c5-419b-b042-2886df0fae09",
+        "created": "2022-11-22T12:34:40",
+        "updated": "2022-11-22T12:34:40",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "default",
+        "type": "orchestrator",
+        "flavor": "local",
+        "configuration": {}
+    },
+    {
+        "id": "5ca75f4e-10a3-435c-96fd-e28fe365a500",
+        "created": "2022-11-24T17:05:58",
+        "updated": "2022-11-24T17:05:58",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "gcp_secrets_manager",
+        "type": "secrets_manager",
+        "flavor": "gcp",
+        "configuration": {
+            "scope": "component",
+            "namespace": null,
+            "project_id": "zenml-demos"
+        }
+    },
+    {
+        "id": "676eb0ef-2305-45e1-ae90-e77788926236",
+        "created": "2022-11-23T15:13:59",
+        "updated": "2022-11-23T15:13:59",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "aws_secrets_manager",
+        "type": "secrets_manager",
+        "flavor": "aws",
+        "configuration": {
+            "scope": "component",
+            "namespace": null,
+            "region_name": "eu-central-1"
+        }
+    },
+    {
+        "id": "7894b82b-5523-4e45-83ca-f2c57ba7b6fa",
+        "created": "2022-11-24T17:05:00",
+        "updated": "2022-11-24T17:05:00",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "gcp_store",
+        "type": "artifact_store",
+        "flavor": "gcp",
+        "configuration": {
+            "authentication_secret": null,
+            "path": "gs://ing-store"
+        }
+    },
+    {
+        "id": "90657abf-3c69-46b7-b164-f8440dd67520",
+        "created": "2022-11-24T16:09:12",
+        "updated": "2022-11-24T16:09:12",
+        "user": "058442b7-5e18-40bc-817c-a13157edf6b4",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "default",
+        "type": "artifact_store",
+        "flavor": "local",
+        "configuration": {}
+    },
+    {
+        "id": "a088e255-2d42-4324-8544-e54bcb0f98c4",
+        "created": "2022-11-24T17:04:53",
+        "updated": "2022-11-24T17:04:53",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "vertex_ai_orchestrator",
+        "type": "orchestrator",
+        "flavor": "vertex",
+        "configuration": {
+            "labels": {},
+            "synchronous": false,
+            "node_selector_constraint": null,
+            "pod_settings": null,
+            "service_account_path": null,
+            "project": "zenml-demos",
+            "location": "europe-west3",
+            "pipeline_root": null,
+            "encryption_spec_key_name": null,
+            "workload_service_account": "ing-zenmlsa-ing@zenml-demos.iam.gserviceaccount.com",
+            "network": null,
+            "cpu_limit": null,
+            "memory_limit": null,
+            "gpu_limit": null
+        }
+    },
+    {
+        "id": "a39279a6-1917-4fcd-b1f8-80ca48007503",
+        "created": "2022-11-23T15:15:15",
+        "updated": "2022-11-23T15:15:15",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "ecr_registry",
+        "type": "container_registry",
+        "flavor": "aws",
+        "configuration": {
+            "authentication_secret": null,
+            "uri": "715803424590.dkr.ecr.us-east-1.amazonaws.com"
+        }
+    },
+    {
+        "id": "ab4e2a49-0634-47ec-a952-5d8cc1dffd75",
+        "created": "2022-11-24T17:04:34",
+        "updated": "2022-11-24T17:04:34",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "deepchecks_data_validator",
+        "type": "data_validator",
+        "flavor": "deepchecks",
+        "configuration": {}
+    },
+    {
+        "id": "b8bfc1ec-c458-427c-9028-a04aa230b41c",
+        "created": "2022-11-23T15:17:07",
+        "updated": "2022-11-23T15:17:07",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "kserve_s3",
+        "type": "model_deployer",
+        "flavor": "kserve",
+        "configuration": {
+            "kubernetes_context": "kubeflowmultitenant",
+            "kubernetes_namespace": "zenml-workloads",
+            "base_url": "http://abb84c444c7804aa98fc8c097896479d-377673393.us-east-1.elb.amazonaws.com:80",
+            "secret": "kservesecret",
+            "custom_domain": null
+        }
+    },
+    {
+        "id": "c189b257-8f1f-4f32-8fc3-20cc48d32db6",
+        "created": "2022-11-24T10:45:36",
+        "updated": "2022-11-24T10:45:36",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "evidently",
+        "type": "data_validator",
+        "flavor": "evidently",
+        "configuration": {}
+    },
+    {
+        "id": "c326e7a8-d185-48ea-a85b-3111bf6e4462",
+        "created": "2022-11-24T17:05:06",
+        "updated": "2022-11-24T17:05:06",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "gcp_registry",
+        "type": "container_registry",
+        "flavor": "gcp",
+        "configuration": {
+            "authentication_secret": null,
+            "uri": "eu.gcr.io/zenml-demos"
+        }
+    },
+    {
+        "id": "ca5b8c63-9ebb-4eca-bce5-5072500ecd3f",
+        "created": "2022-11-22T14:26:50",
+        "updated": "2022-11-22T14:26:50",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "local_mlflow",
+        "type": "experiment_tracker",
+        "flavor": "mlflow",
+        "configuration": {
+            "tracking_uri": null,
+            "tracking_username": null,
+            "tracking_password": null,
+            "tracking_token": null,
+            "tracking_insecure_tls": false,
+            "databricks_host": null
+        }
+    },
+    {
+        "id": "d58e6430-d543-42d1-94ab-199c7c8d1708",
+        "created": "2022-11-23T15:14:56",
+        "updated": "2022-11-23T15:14:56",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "s3_store",
+        "type": "artifact_store",
+        "flavor": "s3",
+        "configuration": {
+            "authentication_secret": null,
+            "path": "s3://zenfiles",
+            "key": null,
+            "secret": null,
+            "token": null,
+            "client_kwargs": null,
+            "config_kwargs": null,
+            "s3_additional_kwargs": null
+        }
+    },
+    {
+        "id": "da1429f0-50c8-41a5-bd9c-418d64853a38",
+        "created": "2022-11-24T17:04:46",
+        "updated": "2022-11-24T17:04:46",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": true,
+        "name": "gcp_mlflow_tracker",
+        "type": "experiment_tracker",
+        "flavor": "mlflow",
+        "configuration": {
+            "experiment_name": null,
+            "nested": false,
+            "tags": {},
+            "tracking_uri": "http://35.246.148.181/mlflow/",
+            "tracking_username": "{{mlflow_secret.tracking_username}}",
+            "tracking_password": "{{mlflow_secret.tracking_password}}",
+            "tracking_token": null,
+            "tracking_insecure_tls": true,
+            "databricks_host": null
+        }
+    },
+    {
+        "id": "e407afb2-c41c-4034-866e-a1af01ee5091",
+        "created": "2022-11-24T16:09:12",
+        "updated": "2022-11-24T16:09:12",
+        "user": "058442b7-5e18-40bc-817c-a13157edf6b4",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "default",
+        "type": "orchestrator",
+        "flavor": "local",
+        "configuration": {}
+    },
+    {
+        "id": "e48396af-3abe-493a-aa5d-a6c6acf3983e",
+        "created": "2022-11-23T17:17:16",
+        "updated": "2022-11-23T17:17:16",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "aws_secrets_manager2",
+        "type": "secrets_manager",
+        "flavor": "aws",
+        "configuration": {
+            "scope": "component",
+            "namespace": null,
+            "region_name": "eu-central-1"
+        }
+    },
+    {
+        "id": "f500a2e5-7501-4988-b579-177576bac6e5",
+        "created": "2022-11-23T15:14:23",
+        "updated": "2022-11-23T15:14:23",
+        "user": "ef99200c-807a-4efa-b006-303462d6680c",
+        "project": "8f55ff0d-bfbd-479c-a7d4-60af51236203",
+        "is_shared": false,
+        "name": "aws_mlflow_tracker",
+        "type": "experiment_tracker",
+        "flavor": "mlflow",
+        "configuration": {
+            "experiment_name": null,
+            "nested": false,
+            "tags": {},
+            "tracking_uri": "https://ac8e6c63af207436194ab675ee71d85a-1399000870.us-east-1.elb.amazonaws.com/mlflow",
+            "tracking_username": "{{mlflow_secret.tracking_username}}",
+            "tracking_password": "{{mlflow_secret.tracking_password}}",
+            "tracking_token": null,
+            "tracking_insecure_tls": true,
+            "databricks_host": null
+        }
+    }
+]

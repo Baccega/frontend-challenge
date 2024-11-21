@@ -1,21 +1,4 @@
-![ZenML ML Engineer](src/static/logo.png)
-
-# ZenML Frontend Engineer - Coding Challenge
-
-We don't like whiteboard interviews and weekend-filling coding challenges. You're a pro, and we want to give you a
-platform to show that - in an environment you like. Your editor, your machine, your setup. All our challenges will
-be based either directly on the role you applied for or be as similar as they can get because you deserve to get a
-glimpse at what you'll be doing, too.
-
-This challenge is intended to test your knowledge of frontend development, given a simple REST API.
-
-## Summary
-
-**How much time should you spend on this:** 3-6h  
-**How much time do you have:** 7 days  
-**What should you deliver in the end:** A zipped copy of your solution, including instructions on how to run it (important: including the `.git` folder)
-
-## Instructions
+# Frontend Engineer - Coding Challenge
 
 Your task is to create a frontend application that visualizes the contents of the REST API hosted publically here:
 
@@ -92,28 +75,3 @@ Please showcase the answers to the above questions by creating an application th
 
 **Note**:
 Please use TypeScript for your project. Besides that, you can use any tool or library you like for building your application, but we suggest using React as this is the library of choice for building frontend applications at ZenML. Additionally, feel free to use any other third-party library you wish, including frameworks like Next.js or CSS libraries like Tailwind.
-
-## What will you be evaluated on
-
-We're not looking for the perfect solution - but we want to get an insight into your problem-solving process, so please consider the following things:
-
-- Show us your understanding of how to create components - which parts of your UI are (or should be) reusable and which props do your components need?
-- How do you manage the state of your application, and how do you deal with the data that is fetched from the server?
-- How resilient is your application, if it comes to unexpected errors? Does it break, or how does it handle these errors?
-- Considering responsiveness: In case your application isn't solely used on a desktop, how does it behave on a phone or a tablet?
-- Not all users can use your application in the same way, so how accessible is it to people with disabilities? Does Tab-Navigation work throughout the pages, or do you use schematic html to support screen readers?
-- Code quality, organization, and documentation: Is your code designed with strategies to enhance maintainability? How have you structured your codebase to ensure it remains manageable and scalable, especially considering the potential scenario of a larger team working on it in the future?
-- What nice UX enhancements can you come up with? Are there any small tweaks that can enhance the user’s experience while using the application?
-
-## For bonus points...
-
-If you have some time, please indicate your answers to the following questions. Please note you do NOT need to implement the functionalities asked:
-
-1. How would you add the remaining CRUD operations (create, update, and delete) for a stack and stack component to your application?
-2. How would you handle a token or a cookie, in case the API would need authentication?
-3. Given that some features are open-source and some are not, how would you approach separating and integrating open and closed-source features?
-
-## Questions
-
-If at any point you are stuck and would like some help, please feel free to contact us. When you are done, please send the zipped solution to
-`careers@zenml.io` for evaluation. We hope you enjoy the challenge and wish you good luck!

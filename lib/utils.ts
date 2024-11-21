@@ -2,6 +2,7 @@ import { StackComponent } from "@/types/stack-component";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+// This will probably no longer work, use the data from the `stacks.json` and `stackComponents.json` files
 export const baseUrl = "https://zenml-frontend-challenge-backend.fly.dev";
 
 // Utility function to merge classNames togheter

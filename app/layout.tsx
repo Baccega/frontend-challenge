@@ -16,9 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ZenML Coding Challenge",
-  description:
-    "My solution for the 'ZenML Frontend Engineer - Coding Challenge'",
+  title: "Coding Challenge",
+  description: "My solution for a 'Frontend Engineer - Coding Challenge'",
 };
 
 export default function RootLayout({

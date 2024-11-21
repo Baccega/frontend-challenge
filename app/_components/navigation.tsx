@@ -23,7 +23,7 @@ export function Navigation() {
               size="icon"
               variant="ghost"
               tabIndex={-1}
-              className="group-focus/back:bg-accent group-focus/back:text-accent-foreground h-12 w-12 rounded-full p-2 transition-all hover:scale-105 active:scale-95 group-focus/back:scale-105 group-focus/back:border group-focus/back:border-primary-500"
+              className="h-12 w-12 rounded-full p-2 transition-all hover:scale-105 active:scale-95 group-focus/back:scale-105 group-focus/back:border group-focus/back:border-primary-500 group-focus/back:bg-accent group-focus/back:text-accent-foreground"
             >
               <ArrowLeft className="focus:outline-none" />
             </Button>
@@ -33,7 +33,7 @@ export function Navigation() {
           <Image
             priority
             src="/logo.png"
-            alt="ZenML logo, homepage"
+            alt="Logo, homepage"
             width={135}
             className="transition-transform hover:scale-105 active:scale-95"
             height={46}

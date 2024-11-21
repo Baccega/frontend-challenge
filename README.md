@@ -1,6 +1,6 @@
-# ZenML Frontend Challenge Q3 2024
+# Frontend Challenge Q3 2024
 
-This is my solution to the ZenML Frontend Challenge for Q3 2024.
+This is my solution to the Frontend Challenge for Q3 2024.
 
 ## How to run this project
 
